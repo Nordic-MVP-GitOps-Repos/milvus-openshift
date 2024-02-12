@@ -9,6 +9,7 @@ rules:
       - 'watch'
       - 'create'
       - 'use'
+      - 'patch'
     apiGroups:
       - "security.openshift.io"
     resources:
