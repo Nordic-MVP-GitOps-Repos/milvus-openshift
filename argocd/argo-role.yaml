@@ -6,6 +6,6 @@ rules:
   - verbs:
       - '*'
     apiGroups:
-      - ""
+      - "milvus.io"
     resources:
-      - '*'
+      - 'milvuses'
