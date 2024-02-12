@@ -5,3 +5,5 @@ resources:
 
   - https://raw.githubusercontent.com/zilliztech/milvus-operator/main/deploy/manifests/deployment.yaml
   - privileged-scc-rb.yaml
+  - milvus-operator-rb.yaml
+  - milvus-operator-role.yaml
