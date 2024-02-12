@@ -4,6 +4,7 @@ metadata:
   namespace: milvus-operator
   name: my-release
 spec:
+  mode: cluster
   config:
     common:
       security:

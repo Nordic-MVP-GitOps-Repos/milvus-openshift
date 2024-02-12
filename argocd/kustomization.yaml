@@ -8,4 +8,4 @@ resources:
 
   #- cert-manager.yaml
   - milvus-operator.yaml
-  - milvus-cluster.yaml
+  # - milvus-cluster.yaml
