@@ -1,0 +1,13 @@
+apiVersion: milvus.io/v1beta1
+kind: Milvus
+metadata:
+  name: my-release
+spec:
+  config:
+    common:
+      security:
+        tlsMode: 1
+    tls:
+      caPemPath: configs/cert/ca.pem
+      serverKeyPath: configs/cert/server.key
+      serverPemPath: configs/cert/server.pem
