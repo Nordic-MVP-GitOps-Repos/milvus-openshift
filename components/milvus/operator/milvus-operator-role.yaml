@@ -4,9 +4,7 @@ metadata:
   name: milvus-operator-role
 rules:
   - verbs:
-      - 'get'
-      - 'list'
-      - 'watch'
+      - '*'
     apiGroups:
       - "security.openshift.io"
     resources:
