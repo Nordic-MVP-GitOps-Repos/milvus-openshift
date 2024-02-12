@@ -2,7 +2,7 @@ apiVersion: milvus.io/v1beta1
 kind: Milvus
 metadata:
   namespace: milvus-operator
-  name: my-release
+  name: milvus
 spec:
   mode: cluster
   #config:

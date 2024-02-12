@@ -7,5 +7,5 @@ resources:
   - argo-rb.yaml
 
   #- cert-manager.yaml
-  - milvus-operator.yaml
-  - milvus-cluster.yaml
+  #- milvus-operator.yaml
+  #- milvus-cluster.yaml
