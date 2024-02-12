@@ -5,10 +5,10 @@ metadata:
   name: milvus
 spec:
   mode: cluster
-  #config:
-  #  common:
-  #    security:
-  #      tlsMode: 1
+  config:
+    common:
+      security:
+        tlsMode: 1
   #  tls:
   #    caPemPath: configs/cert/ca.pem
   #    serverKeyPath: configs/cert/server.key
