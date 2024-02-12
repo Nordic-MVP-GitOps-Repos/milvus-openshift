@@ -5,11 +5,11 @@ metadata:
   name: my-release
 spec:
   mode: cluster
-  config:
-    common:
-      security:
-        tlsMode: 1
-    tls:
-      caPemPath: configs/cert/ca.pem
-      serverKeyPath: configs/cert/server.key
-      serverPemPath: configs/cert/server.pem
+  #config:
+  #  common:
+  #    security:
+  #      tlsMode: 1
+  #  tls:
+  #    caPemPath: configs/cert/ca.pem
+  #    serverKeyPath: configs/cert/server.key
+  #    serverPemPath: configs/cert/server.pem
