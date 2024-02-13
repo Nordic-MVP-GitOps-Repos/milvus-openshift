@@ -9,42 +9,42 @@ spec:
     common:
       security:
         tlsMode: 1
-  proxy:
-  timeTickInterval: 200 # ms, the interval that proxy synchronize the time tick
-  healthCheckTimeout: 3000 # ms, the interval that to do component healthy check
-  msgStream:
-    timeTick:
-      bufSize: 512
-  maxNameLength: 255 # Maximum length of name for a collection or alias
-  # Maximum number of fields in a collection.
-  # As of today (2.2.0 and after) it is strongly DISCOURAGED to set maxFieldNum >= 64.
-  # So adjust at your risk!
-  maxFieldNum: 64
-  maxShardNum: 16 # Maximum number of shards in a collection
-  maxDimension: 32768 # Maximum dimension of a vector
-  # Whether to produce gin logs.\n
-  # please adjust in embedded Milvus: false
-  ginLogging: true
-  maxTaskNum: 1024 # max task number of proxy task queue
-  accessLog:
-    localPath: /tmp/milvus_accesslog
-    filename: milvus_access_log.log # Log filename, leave empty to disable file log.
-  http:
-    enabled: true # Whether to enable the http server
-    debug_mode: false  # Whether to enable http server debug mode
-    httpsenabled: true
-    httpserverPemPath: /milvus/configs/cert/server.pem
-    httpserverKeyPath: /milvus/configs/server.key
-    #httpcaPemPath: /mnt/infra/tls/ca.crt
-  port: 19530
-  internalPort: 19529
-  grpc:
-    serverMaxSendSize: 67108864
-    serverMaxRecvSize: 67108864
-    clientMaxSendSize: 268435456
-    clientMaxRecvSize: 268435456  
-  
-  #  tls:
-  #    caPemPath: configs/cert/ca.pem
-  #    serverKeyPath: configs/cert/server.key
-  #    serverPemPath: configs/cert/server.pem
+    proxy:
+    timeTickInterval: 200 # ms, the interval that proxy synchronize the time tick
+    healthCheckTimeout: 3000 # ms, the interval that to do component healthy check
+    msgStream:
+      timeTick:
+        bufSize: 512
+    maxNameLength: 255 # Maximum length of name for a collection or alias
+    # Maximum number of fields in a collection.
+    # As of today (2.2.0 and after) it is strongly DISCOURAGED to set maxFieldNum >= 64.
+    # So adjust at your risk!
+    maxFieldNum: 64
+    maxShardNum: 16 # Maximum number of shards in a collection
+    maxDimension: 32768 # Maximum dimension of a vector
+    # Whether to produce gin logs.\n
+    # please adjust in embedded Milvus: false
+    ginLogging: true
+    maxTaskNum: 1024 # max task number of proxy task queue
+    accessLog:
+      localPath: /tmp/milvus_accesslog
+      filename: milvus_access_log.log # Log filename, leave empty to disable file log.
+    http:
+      enabled: true # Whether to enable the http server
+      debug_mode: false  # Whether to enable http server debug mode
+      httpsenabled: true
+      httpserverPemPath: /milvus/configs/cert/server.pem
+      httpserverKeyPath: /milvus/configs/server.key
+      #httpcaPemPath: /mnt/infra/tls/ca.crt
+    port: 19530
+    internalPort: 19529
+    grpc:
+      serverMaxSendSize: 67108864
+      serverMaxRecvSize: 67108864
+      clientMaxSendSize: 268435456
+      clientMaxRecvSize: 268435456  
+    
+    #  tls:
+    #    caPemPath: configs/cert/ca.pem
+    #    serverKeyPath: configs/cert/server.key
+    #    serverPemPath: configs/cert/server.pem
