@@ -1,0 +1,26 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: milvus-route
+  namespace: milvus-operator
+spec:
+  host: milvus-route-milvus-operator.apps.ocp-2700015rqr-83bl.cloud.techzone.ibm.com
+  to:
+    kind: Service
+    name: milvus-milvus
+    weight: 100
+  port:
+    targetPort: milvus
+  tls:
+    termination: passthrough
+  wildcardPolicy: None
+status:
+  ingress:
+    - host: milvus-route-milvus-operator.apps.ocp-2700015rqr-83bl.cloud.techzone.ibm.com
+      routerName: default
+      conditions:
+        - type: Admitted
+          status: 'True'
+          lastTransitionTime: '2024-02-12T17:23:50Z'
+      wildcardPolicy: None
+      routerCanonicalHostname: router-default.apps.ocp-2700015rqr-83bl.cloud.techzone.ibm.com
