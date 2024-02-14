@@ -32,7 +32,7 @@ spec:
     http:
       enabled: true # Whether to enable the http server
       debug_mode: false  # Whether to enable http server debug mode
-      httpsenabled: false
+      httpsenabled: true
       #httpserverPemPath: /milvus/configs/cert/server.pem
       #httpserverKeyPath: /milvus/configs/server.key
       #httpcaPemPath: /mnt/infra/tls/ca.crt
