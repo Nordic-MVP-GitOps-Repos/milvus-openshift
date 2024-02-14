@@ -31,20 +31,15 @@ spec:
       filename: milvus_access_log.log # Log filename, leave empty to disable file log.
     http:
       enabled: true # Whether to enable the http server
-      debug_mode: false  # Whether to enable http server debug mode
+      debug_mode: true  # Whether to enable http server debug mode
       httpsenabled: true
-      #httpserverPemPath: /milvus/configs/cert/server.pem
-      #httpserverKeyPath: /milvus/configs/server.key
-      #httpcaPemPath: /mnt/infra/tls/ca.crt
+      httpserverPemPath: /milvus/configs/cert/server.pem
+      httpserverKeyPath: /milvus/configs/cert/server.key
+      httpcaPemPath: /milvus/configs/cert/ca.pem
     port: 19530
     internalPort: 19529
     grpc:
       serverMaxSendSize: 67108864
       serverMaxRecvSize: 67108864
       clientMaxSendSize: 268435456
-      clientMaxRecvSize: 268435456  
-    
-    #  tls:
-    #    caPemPath: configs/cert/ca.pem
-    #    serverKeyPath: configs/cert/server.key
-    #    serverPemPath: configs/cert/server.pem
+      clientMaxRecvSize: 268435456
